@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CYP</title>
+ <link href="style.css" href="script.js" rel="stylesheet" type="text/css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+</head>
+    
+<body>
+    <section id="nav-bar"  data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <a class="navbar-brand"> <h1>CROP YEILD PREDICTION</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#top">HOME</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#team">OUR TEAM</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT US</a>
+         </li>
+         </ul>
+         </div>
+        </nav>
+
+    </section>
+
+    <section id="form">
+        <div class="form-predict">
+            <img src="0.jpeg" class="img-fluid img-thumnail" alt="..">
+            <div class="form-responsive">
+                <h3>Get The Prediction</h3>
+  
+                <form  method="post">
+                  <label for="District">Select District:</label>
+                  <select id="District"  name="Districts" required>
+                      <option selected disabled value="">choose...</option>
+                      <option value="Barishal">Barishal</option>
+                      <option value="Bogra">Bogra</option>
+                      <option value="Chittagong">Chittagong</option>
+                      <option value="Comilla">Comilla</option>
+                      <option value="Dhaka">Dhaka</option>
+                      <option value="Dinajpur">Dinajpur</option>
+                      <option value="Faridpur">Faridpur</option>
+                      <option value="Jessore">Jessore</option>
+                      <option value="Khulna">Khulna</option>
+                      <option value="Mymensingh">Mymensingh</option>
+                      <option value="Noakhali">Noakhali</option>
+                      <option value="Pabna">Pabna</option>
+                      <option value="Patuakhali">Patuakhali</option>
+                      <option value="Rajshahi">Rajshahi</option>
+                      <option value="Rangamati">Rangamati</option>
+                      <option value="Rangpur">Rangpur</option>
+                      <option value="sylhet">sylhet</option>
+                      <option value="Tangail">Tangail</option>
+                  </select>
+          
+                  <label for="Crops">Select Crops:</label>
+                  <select id="Crops" name="Crop" required>
+                      <option selected disabled value="">choose...</option>
+                      <option value="Aman">Aman</option>
+                      <option value="Aus">Aus</option>
+                      <option value="Boro">Boro</option>
+                      <option value="Jute">Jute</option>
+          
+                  </select>
+          
+                  <label for="Area">Area:</label>
+                  <input type="text" name="Area" required>
+         
+                  <label for="Year">Year:</label>
+                  <input type="text" name="Year" required><br><br>
+                  
+                  <input class="btn"  type="submit" name="" value="Submit" onclick="myFunction()">
+                  <p id="demo"></p>
+              </form>
+  
+            </div>
+        </div>
+        
+    </section>
+
+
+<section id="team">
+    <div class="container">
+        <h2>OUR TEAM</h2>
+    <div class="row">
+    <div class="col-md-4 profile-pic text-center">
+    <div class="img-box">
+        <img src="akhtar.png"class="img-responsive">
+        <ul>
+            <a href="https://www.facebook.com/akhtar.zaman.39589"><li><i class="fa fa-facebook"></i></li></a>
+            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+        </ul>
+    </div>
+        <h3>Akhtar Zaman Khan</h3>
+        <h4>team member CSE499B</h4>
+    </div>
+    <div class="col-md-4 profile-pic text-center">
+        <div class="img-box">
+            <img src="tuly.jpg"class="img-responsive">
+            <ul>
+                <a href="https://www.facebook.com/zaisha.tl/"><li><i class="fa fa-facebook"></i></li></a>
+                <a href="https://www.linkedin.com/in/nurun-naima-tuly000/"><li><i class="fa fa-linkedin"></i></li></a>
+            </ul>
+ </div>
+    <h3>Nurun Naima Tuly</h3>
+    <h4>team member CSE499B</h4>
+</div>
+<div class="col-md-4 profile-pic text-center">
+    <div class="img-box">
+    <img src="sony.png"class="img-responsive">
+    <ul>
+    <a href="https://www.facebook.com/xenon.sonyy"><li><i class="fa fa-facebook"></i></li></a>
+    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+     </ul>
+    </div>
+     <h3>Muktadir Hossain Sony</h3>
+    <h4>team member CSE499B</h4>
+    </div>
+    </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="row">
+     <div class="col-md-6">
+     <form class="contact-form">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Name">   
+     </div>
+     <div class="form-group">
+        <input type="number" class="form-control" placeholder="Phone no">   
+     </div>
+     <div class="form-group">
+        <input type="email" class="form-control" placeholder="Email id">   
+     </div>
+     <div class="form-group">
+        <textarea class="form-control" rows="5" placeholder="Type your message..."></textarea>  
+     </div>
+     <button type="button" class="btn btn-orimary">Send Message</button>
+     </form>
+
+     </div>
+     <div class="col-md-6 contact-info">
+         <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i> Dhaka, Bangladesh</div> 
+        <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i> +88 01688917907</div>
+        <div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i> naimatuly93@gmail.com</div>
+        <div class="follow"><label><b>Get Social:</b></label>
+        <a href="https://www.facebook.com/zaisha.tl/"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </div>
+     </div>
+    </div>
+    
+</section>
+
+
+</body>
+
+</html>
